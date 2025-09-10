@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to My Interactive Page</h1>
+    <button id="toggle-theme">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Feature -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p id="counter">0</p>
+      <button id="increase">➕ Increase</button>
+      <button id="decrease">➖ Decrease</button>
+      <button id="reset">🔄 Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript makes web pages interactive and dynamic.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">DOM stands for Document Object Model, which represents the structure of a web page.</p>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>📋 Sign Up Form</h2>
+      <form id="signup-form">
+        <label>Name: <input type="text" id="name"></label><span class="error" id="name-error"></span><br>
+        <label>Email: <input type="text" id="email"></label><span class="error" id="email-error"></span><br>
+        <label>Password: <input type="password" id="password"></label><span class="error" id="password-error"></span><br>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
